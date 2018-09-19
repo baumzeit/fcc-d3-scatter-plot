@@ -1,0 +1,71 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url('https://i.ytimg.com/vi/nSjzaWKC_LU/maxresdefault.jpg') no-repeat bottom;
+  background-size: cover;
+  height: 100vh;
+  margin: 0;
+}
+
+#title {
+  font-family: helvetica, sans-serif;
+  font-size: 1.5em;
+}
+
+#subtitle {
+  font-family: arial, sans-serif;
+  font-size: 1em;
+}
+
+#tooltip {
+  position: absolute;
+  text-align: left;
+  padding: 6px 16px;
+  font: 12px sans-serif;
+  background: #fff;
+  border-radius: 4px;
+  pointer-events: none;
+  line-height: 1.7;
+  white-space: nowrap;
+}
+
+.axis-label {
+  font-family: arial, serif-sans;
+  font-size: 0.9em;
+}
+
+svg {
+  margin-bottom: 100px;
+  background-color: #ddd;
+  opacity: 0.9;
+  box-shadow: 1px 2px 40px -2px #111;
+}
+
+.dot,
+.line {
+  transition: r 50ms ease-out;
+}
+
+.dot:hover {
+  r: 10;
+  cursor: pointer;
+}
+
+.name {
+  margin-right: 22px;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+#x-axis text,
+#y-axis text {
+  font-family: helvetica, serif-sans;
+  font-size: 1.1em;
+  opacity: 0.75;
+}
+
+.legend-text {
+  font-family: helvetica, sans-serif;
+  font-size: 0.85em;
+}
